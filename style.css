@@ -3,6 +3,8 @@
 :root {
   --sidebar: #1992d4; 
   --links: #fff;
+  --main: #e2e8f0;
+  --profile: #facc15;
 }
 
 body {
@@ -71,7 +73,7 @@ ul {
   display: flex;
   align-items: center;
   margin-bottom: 12px;
-  padding: 6px;
+  padding: 5px;
   margin-left: 4px;
 }
 
@@ -88,3 +90,141 @@ ul {
   width: 20px;
   margin-right: 22px;
 }
+
+
+/* navbar */
+.nav {
+  display: grid;
+  grid-template-columns: 600px  auto;
+  grid-template-rows: 50px auto;
+  grid-template-areas: 
+    "search profile"                        
+    "logo   buttons";
+  background-color: #fff;
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.1);
+  height: 150px;
+  width: 100%;
+  position: relative;
+}
+
+.search {
+  grid-area: search;
+}
+
+.search img {
+  width: 20px;
+  height: 20px;
+}
+
+.search-bar {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 18px;
+  height: 50px;
+  margin-left: 40px;
+  padding-top: 6px;
+}
+
+.input {
+  background-color: var(--main);
+  width: 90%;
+  height: 24px;
+  border-radius: 8px; 
+} 
+
+.profile {
+  grid-area: profile; 
+}
+
+.profile > .notifications {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 50px;
+  gap: 24px;
+  margin-top: 6px;
+  margin-right: 64px;
+}
+
+.profile > .notifications > .profile-name {
+  font-color: #111;
+  font-weight: 800;
+}
+
+.profile > .notifications img {
+  width: 20px;
+  height: 20px;
+}
+
+.profile > .notifications > .profile-img-container {
+  width: 36px;
+  height: 36px;
+  background-color: var(--profile);
+  border-radius: 20px;
+}
+
+.buttons {
+  grid-area: buttons;
+}
+
+.nav-buttons {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style-type: none;
+  justify-content: flex-end;
+  gap: 24px;
+  margin-right: 52px;
+  margin-top: 48px;
+}
+
+.nav-buttons > li > button {
+  color: #fff;
+  font-weight: bold;
+  background-color: var(--sidebar);
+  border: none;
+  border-radius: 16px;
+  padding: 8px 24px;
+}    
+
+
+.logo {
+  grid-area: logo;
+}
+
+.logo-img-profile {
+  height: 56px;
+  width: 56px;
+  background-color: var(--profile);
+  border-radius: 36px;
+} 
+
+.logo-greeting {
+  font-size: 10px;
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+
+.logo-name {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.profile-text {
+  margin-top: 10px;
+  margin-left: 18px;
+}
+
+.logo-area {
+  display: flex;
+  margin-left: 40px;
+  margin-top: 28px;
+}
+
+
+/* main */
+.main {
+  background-color: var(--main);
+}
+

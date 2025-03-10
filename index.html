@@ -3,57 +3,95 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title></title>
+    <title>Dashboard</title>
     <link href="./style.css" rel="stylesheet" />
   </head>
   <body>
     <div class="container">
 
-      <!-- sidebar -->
+      <!-- Sidebar -->
       <div class="sidebar">
         <div class="dashboard">
           <img src="./assets/icons/dashboard.svg" alt="dashboard logo" />
           <a href="#">Dashboard</a>
         </div>
 
-        <!--profile links -->
+        <!-- Profile links -->
         <ul class="profile-links">
           <li class="list-item">
-            <img src="./assets/icons/home.svg" alt="home logo"><a href="#">Home</a>
+            <img src="./assets/icons/home.svg" alt="home logo" /><a href="#">Home</a>
           </li>
           <li class="list-item">
-            <img src="./assets/icons/profile.svg" alt="profile logo"><a href="#">Profile</a>
+            <img src="./assets/icons/profile.svg" alt="profile logo" /><a href="#">Profile</a>
           </li>
           <li class="list-item">
-            <img src="./assets/icons/message.svg" alt="message logo"><a href="#">Messages</a>
+            <img src="./assets/icons/message.svg" alt="message logo" /><a href="#">Messages</a>
           </li>
           <li class="list-item">
-            <img src="./assets/icons/history.svg" alt="history logo"><a href="#">History</a>
+            <img src="./assets/icons/history.svg" alt="history logo" /><a href="#">History</a>
           </li>
           <li class="list-item">
-            <img src="./assets/icons/tasks.svg" alt="tasks logo"><a href="#">Tasks</a>
+            <img src="./assets/icons/tasks.svg" alt="tasks logo" /><a href="#">Tasks</a>
           </li>
           <li class="list-item">
-            <img src="./assets/icons/communities.svg" alt="communities logo"><a href="#">Communities</a>
-          </li>
-        </ul
-        
-        <!-- suppport links -->
-        <ul class="support-links">
-          <li class="list-item">
-            <img src="./assets/icons/settings.svg" alt="communities logo"><a href="#">Settings</a>
-          </li>
-          <li class="list-item">
-            <img src="./assets/icons/support.svg" alt="communities logo"><a href="#">Support</a>
-          </li>
-          <li class="list-item">
-            <img src="./assets/icons/privacy.svg" alt="communities logo"><a href="#">Privacy</a>
+            <img src="./assets/icons/communities.svg" alt="communities logo" /><a href="#">Communities</a>
           </li>
         </ul>
 
+        <!-- Support links -->
+        <ul class="support-links">
+          <li class="list-item">
+            <img src="./assets/icons/settings.svg" alt="settings logo" /><a href="#">Settings</a>
+          </li>
+          <li class="list-item">
+            <img src="./assets/icons/support.svg" alt="support logo" /><a href="#">Support</a>
+          </li>
+          <li class="list-item">
+            <img src="./assets/icons/privacy.svg" alt="privacy logo" /><a href="#">Privacy</a>
+          </li>
+        </ul>
       </div>
-      <div class="nav"></div>
+      
+      <!-- Nav search -->
+      <div class="nav">
+        <div class="search">
+          <div class="search-bar"> 
+            <img src="./assets/icons/search.svg" alt="search logo" /> 
+            <div class="input"></div> 
+          </div>
+        </div>
+
+        <div class="profile">
+          <div class="notifications">
+            <img src="./assets/icons/notification.svg" alt="notifications" />
+            <div class="profile-img-container"></div>
+            <div class="profile-name">Morgan Oakley</div>
+          </div>
+        </div>
+
+        <div class="buttons">
+          <ul class="nav-buttons">
+            <li><button>New</button></li>
+            <li><button>Upload</button></li>
+            <li><button>Share</button></li>
+          </ul>
+        </div>
+
+        <div class="logo">
+          <div class="logo-area">
+            <div class="logo-img-profile"></div>
+            <div class="profile-text">
+              <div class="logo-greeting">Hi there,</div>
+              <div class="logo-name">Morgan Oakley (@morgan)</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Main content -->
       <div class="main"></div>
+      
     </div>
   </body>
 </html>
+
